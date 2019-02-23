@@ -27,7 +27,7 @@ script:
 addons:
   hosts:
     - travis.dev
-    - joshkalderimis.com
+    #- joshkalderimis.com
 
 env:
   global:
