@@ -24,9 +24,9 @@ script:
 - "./gradlew :facebook:test -i"
 - .travis/deploy.sh
 
-addons:
-  hosts:
-    - travis.dev
+#addons:
+#  hosts:
+#    - travis.dev
     #- joshkalderimis.com
 
 env:
