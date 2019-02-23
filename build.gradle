@@ -24,12 +24,16 @@ buildscript {
     project.apply from: "${rootDir}/constants.gradle"
 
     repositories {
+        maven {
+          url "https://plugins.gradle.org/m2/"
+        }
         mavenCentral()
         google()
         jcenter()
     }
     dependencies {
         classpath "com.android.tools.build:gradle:${project.ext.gradleVersion}"
+        classpath "de.marcphilipp.gradle:nexus-publish-plugin:0.2.0"
     }
 }
 
@@ -42,3 +46,5 @@ allprojects {
 
     project.apply from: "${rootDir}/constants.gradle"
 }
+
+// apply plugin: "de.marcphilipp.nexus-publish"

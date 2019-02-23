@@ -24,6 +24,11 @@ script:
 - "./gradlew :facebook:test -i"
 - .travis/deploy.sh
 
+addons:
+  hosts:
+    - travis.dev
+    - joshkalderimis.com
+
 env:
   global:
   - # GPG_KEY_ID
